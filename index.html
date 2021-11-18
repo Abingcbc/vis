@@ -111,7 +111,7 @@
             <!-- .end .column -->
             <div class="column" style="margin-left: 50vh;">
               <h4>Over time, the
-                <strong style="color: #EFA90D"> number of gold medals</strong> is increasing, but the <strong
+                <strong style="color: #EFA90D"> total number of medals</strong> is increasing, but the <strong
                   style="color: #005F9E;">average number of each country</strong> is decreasing.
               </h4>
             </div>
@@ -346,33 +346,32 @@
     var yAxis31 = d3.axisLeft(y31).tickFormat(formatPercent).tickPadding(10);
     var yAxis32 = d3.axisLeft(y32).tickFormat(formatPercent).tickPadding(10);
 
-    var dataset3 = [
-      { 'year': 1896, 'value': 43, 'avg': 3.909090909090909 },
-      { 'year': 1900, 'value': 90, 'avg': 4.285714285714286 },
-      { 'year': 1904, 'value': 96, 'avg': 9.6 },
-      { 'year': 1908, 'value': 110, 'avg': 5.7894736842105265 },
-      { 'year': 1912, 'value': 103, 'avg': 5.722222222222222 },
-      { 'year': 1920, 'value': 156, 'avg': 7.090909090909091 },
-      { 'year': 1924, 'value': 126, 'avg': 4.666666666666667 },
-      { 'year': 1928, 'value': 110, 'avg': 3.3333333333333335 },
-      { 'year': 1932, 'value': 116, 'avg': 4.296296296296297 },
-      { 'year': 1936, 'value': 130, 'avg': 4.0625 },
-      { 'year': 1948, 'value': 138, 'avg': 3.72972972972973 },
-      { 'year': 1952, 'value': 149, 'avg': 3.4651162790697674 },
-      { 'year': 1956, 'value': 153, 'avg': 4.026315789473684 },
-      { 'year': 1960, 'value': 152, 'avg': 3.4545454545454546 },
-      { 'year': 1964, 'value': 163, 'avg': 3.975609756097561 },
-      { 'year': 1968, 'value': 174, 'avg': 3.9545454545454546 },
-      { 'year': 1972, 'value': 195, 'avg': 4.0625 },
-      { 'year': 1976, 'value': 198, 'avg': 4.829268292682927 },
-      { 'year': 1980, 'value': 204, 'avg': 5.666666666666667 },
-      { 'year': 1984, 'value': 226, 'avg': 4.808510638297872 },
-      { 'year': 1988, 'value': 241, 'avg': 4.634615384615385 },
-      { 'year': 1992, 'value': 260, 'avg': 4.0625 },
-      { 'year': 1996, 'value': 271, 'avg': 3.430379746835443 },
-      { 'year': 2000, 'value': 297, 'avg': 3.7125 },
-      { 'year': 2004, 'value': 301, 'avg': 4.0675675675675675 },
-      { 'year': 2008, 'value': 302, 'avg': 3.471264367816092 }]
+    var dataset3 = [{ 'year': 1896, 'value': 122, 'avg': 11.090909090909092 },
+    { 'year': 1900, 'value': 268, 'avg': 12.761904761904763 },
+    { 'year': 1904, 'value': 280, 'avg': 28.0 },
+    { 'year': 1908, 'value': 323, 'avg': 17.0 },
+    { 'year': 1912, 'value': 310, 'avg': 17.22222222222222 },
+    { 'year': 1920, 'value': 436, 'avg': 19.818181818181817 },
+    { 'year': 1924, 'value': 378, 'avg': 14.0 },
+    { 'year': 1928, 'value': 327, 'avg': 9.909090909090908 },
+    { 'year': 1932, 'value': 346, 'avg': 12.814814814814815 },
+    { 'year': 1936, 'value': 388, 'avg': 12.125 },
+    { 'year': 1948, 'value': 411, 'avg': 11.108108108108109 },
+    { 'year': 1952, 'value': 459, 'avg': 10.674418604651162 },
+    { 'year': 1956, 'value': 469, 'avg': 12.342105263157896 },
+    { 'year': 1960, 'value': 461, 'avg': 10.477272727272727 },
+    { 'year': 1964, 'value': 504, 'avg': 12.292682926829269 },
+    { 'year': 1968, 'value': 527, 'avg': 11.977272727272727 },
+    { 'year': 1972, 'value': 600, 'avg': 12.5 },
+    { 'year': 1976, 'value': 613, 'avg': 14.951219512195122 },
+    { 'year': 1980, 'value': 631, 'avg': 17.52777777777778 },
+    { 'year': 1984, 'value': 690, 'avg': 14.680851063829786 },
+    { 'year': 1988, 'value': 739, 'avg': 14.211538461538462 },
+    { 'year': 1992, 'value': 815, 'avg': 12.734375 },
+    { 'year': 1996, 'value': 842, 'avg': 10.658227848101266 },
+    { 'year': 2000, 'value': 921, 'avg': 11.5125 },
+    { 'year': 2004, 'value': 929, 'avg': 12.554054054054054 },
+    { 'year': 2008, 'value': 958, 'avg': 11.011494252873563 }]
 
     x3.domain(d3.extent(dataset3, function (d) { return d3.timeParse("%Y")(d.year); }));
     y31.domain([0, d3.max(dataset3, d => { return d.value; })]);
