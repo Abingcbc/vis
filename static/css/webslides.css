@@ -293,8 +293,8 @@ img {
 img:hover {
   opacity: .9; }
 
-svg:not(:root) {
-  overflow: hidden; }
+/* svg:not(:root) {
+  overflow: hidden; } */
 
 figure {
   line-height: 0;
@@ -3069,8 +3069,8 @@ body {
   -webkit-box-shadow: 0 0 2px #96bbee;
           box-shadow: 0 0 2px #96bbee; }
 
-svg {
-  fill: currentColor; }
+/* svg {
+  fill: currentColor; } */
 
 [class*='bg-'] a,
 [class*='bg-gradient-'] a {

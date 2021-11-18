@@ -34,19 +34,7 @@
 
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
   <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
-
-  <!-- FAVICONS -->
-  <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-  <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-  <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-  <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-  <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-  <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-  <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
-
-  <!-- Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#333333">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -55,11 +43,7 @@
     <nav role="navigation">
       <ul>
         <li class="github">
-          <a rel="external" href="https://github.com/abingcbc" title="Github">
-            <svg class="fa-github">
-              <use xlink:href="#fa-github"></use>
-            </svg>
-          </a>
+          <a rel="external" href="https://github.com/abingcbc/vis" title="Github">Github</a>
         </li>
       </ul>
     </nav>
@@ -77,79 +61,59 @@
         <span class="background"
           style="background-image:url('https://images.daznservices.com/di/library/sporting_news/2/fa/tokyo-olympics-071421-getty-ftr_1t3sbks5q7nbc1hw27ba1f5pfw.jpg')"></span>
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <h1 style="position: absolute;top: -30vh;right: 0vh;font-family: 'Open Sans';"><strong>100 years of Olympic
-              Games</strong></h1>
-          <h4 style="position: absolute;top: 10vh;right: 0vh;font-family: 'ZCOOL QingKe HuangYou';letter-spacing: 5px">
+        <div class="wrap">
+          <h1 style="position: absolute;top: -30vh;right: 0vh;font-family: 'Open Sans';text-align: right;"><strong
+              style="color: #EFA90D;">Who
+            </strong> <strong> won Olympic medals <br> in 112 years from 1896 to 2008?</strong></h1>
+          <h4
+            style="position: absolute;top: 10vh;right: 0vh;font-family: 'ZCOOL QingKe HuangYou';letter-spacing: 5px;text-align: right;">
             <strong>陈柄畅
-              2131933</strong></h4>
-          <!-- <p class="text-intro">WebSlides makes HTML presentations easy.<br>
-            Just the essentials and using lovely CSS.
-          </p>
-          <p>
-            <a href="https://webslides.tv/webslides-latest.zip" class="button zoomIn"
-              title="Download WebSlides for free">
-              <svg class="fa-cloud-download">
-                <use xlink:href="#fa-cloud-download"></use>
-              </svg>
-              WebSlides
-            </a>
-          </p> -->
+              2131933</strong>
+            <br>
+            <p style="font-size: 20px;">Big Data Visualization Final Project<br>2021 Fall</p>
+          </h4>
         </div>
         <!-- .end .wrap -->
       </section>
+
       <section>
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-50 aligncenter">
-          <h2><strong>Why WebSlides?</strong></h2>
-          <p class="text-intro"><a href="demos/why-webslides.html" title="Why WebSlides?">Presentations</a>, <a
-              href="demos/landings.html" title="Landings">landings</a>, <a href="demos/portfolios.html"
-              title="Portfolios">portfolios</a>, and <a href="demos/longforms.html" title="Longforms">longforms</a>.</p>
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li>
-                <h2>An opportunity to engage.</h2>
-                <p>WebSlides is about good karma. This is about telling the story, and sharing it in a beautiful way.
-                  HTML and CSS as narrative elements.</p>
-              </li>
-              <li>
-                <h2>Work better, faster.</h2>
-                <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="demos/index.html"
-                    title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .bg-white shadow -->
+        <span class="background" style="background-color:black"></span>
+        <div class="chart" id="s2_chart"></div>
+        <div class="wrap size-90 aligncenter">
+          <h1>In the past 120 years from 1896 to 2008</h1>
+          <h1>a total of
+            <strong class="counter" style="color:#005F9E">31</strong>
+            Olympic Games were held
+            <br>
+            and
+          </h1>
+          <h1>
+            <strong class="counter" style="color:#EFA90D;font-size:100px">4504</strong>
+            &nbsp;gold medals 🏅 <br> and <br>
+            <strong class="counter" style="color:#EFA90D;font-size:100px">13,747</strong>
+            medals 🥇🥈🥉 &nbsp;&nbsp;&nbsp;<br> were produced.
+          </h1>
+
+        </div>
+        <!-- .end .bg-white shadow -->
         </div>
         <!-- .end .wrap -->
       </section>
+
       <section>
+        <span class="background" style="background-color:black"></span>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
-            <div class="column">
-              <h3><strong>WebSlides is really easy</strong></h3>
-              <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual
-                slide. </p>
-              <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions.
-                There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so
-                  fast</strong>.</p>
+            <div class="column" id="s3_chart">
             </div>
             <!-- .end .column -->
-            <div class="column">
-              <pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
+            <div class="column" style="margin-left: 50vh;">
+              <h4>Over time, the
+                <strong style="color: #EFA90D"> number of gold medals</strong> is increasing, but the <strong
+                  style="color: #005F9E;">average number of each country</strong> is decreasing.
+              </h4>
             </div>
             <!-- .end .column -->
           </div>
@@ -157,205 +121,102 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
       <section>
-        <div class="wrap">
-          <h2>Features</h2>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2>
-                  <span>&rarr;</span>
-                  Simple Navigation
-                </h2>
-                with arrow keys, presenter...
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>
-                  <svg class="fa-link">
-                    <use xlink:href="#fa-link"></use>
-                  </svg>
-                  Permalinks
-                </h2>
-                Go to a specific slide.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>
-                  <svg class="fa-clock-o">
-                    <use xlink:href="#fa-clock-o"></use>
-                  </svg>
-                  Slide Counter
-                </h2>
-                Current/Total number.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>
-                  <span>40<sup>+</sup></span>
-                  Beautiful Components
-                </h2>
-                Covers, cards, quotes...
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>
-                  <svg class="fa-text-height">
-                    <use xlink:href="#fa-text-height"></use>
-                  </svg>
-                  Vertical Rhythm
-                </h2>
-                Use multiples of 8.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>
-                  <span>500<sup>+</sup></span>
-                  SVG Icons
-                </h2>
-                Font Awesome Kit.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="wrap">
-          <h2><strong>WebSlides Demos</strong></h2>
-          <p>Contribute on <a href="https://github.com/webslides/webslides" title="Contribute on Github">Github</a>.
-            <span class="alignright"><a href="demos/index.html" title="WebSlides Demos">View all &rsaquo;</a></span>
-          </p>
-          <ul class="flexblock gallery">
-            <li>
-              <a href="demos/why-webslides.html" title="Why WebSlides?">
-                <figure>
-                  <img alt="Thumbnail Why WebSlides?" src="https://webslides.tv/static/images/demos-why.png">
-                  <figcaption>
-                    <h2>Why WebSlides?</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="demos/landings.html" title="Landings">
-                <figure>
-                  <img alt="Thumbnail Landings" src="https://webslides.tv/static/images/demos-landings.png">
-                  <figcaption>
-                    <h2>Landings</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="demos/portfolios.html" title="Portfolios">
-                <figure>
-                  <img alt="Thumbnail Portfolios" src="https://webslides.tv/static/images/demos-portfolios.png">
-                  <figcaption>
-                    <h2>Portfolios</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="demos/keynote.html" title="Apple Keynote">
-                <figure>
-                  <img alt="Thumbnail Apple Keynote" src="https://webslides.tv/static/images/demos-apple.png">
-                  <figcaption>
-                    <h2>Apple Keynote</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-      <section>
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
-            <div class="column">
-              <h4>
-                <svg class="fa-life-ring">
-                  <use xlink:href="#fa-life-ring"></use>
-                </svg>
-                <strong>Guides</strong>
+            <div class="column" id="s4_chart">
+            </div>
+            <!-- .end .column -->
+            <div class="column" style="margin-left: 50vh;">
+              <h4>The reason is that the number of countries that have won medals has increased from
+                <strong style="color: #005F9E">11</strong> to <strong style="color: #EFA90D;">87</strong>.
               </h4>
-              <p>If you need help, here's just three tutorials. Just a basic knowledge of HTML is required:</p>
-              <ul class="description">
-                <li><a href="demos/components.html" title="WebSlides Components">WebSlides Components</a>.</li>
-                <li><a href="demos/classes.html" title="WebSlides Classes">WebSlides Classes</a>.</li>
-                <li><a href="demos/media.html" title="WebSlides Media">WebSlides Media: images, videos...</a></li>
-              </ul>
             </div>
-            <div class="column">
-              <figure><img class="aligncenter" src="static/images/setup.png" alt="WebSlides Files"></figure>
-            </div>
-            <div class="column">
-              <h4>
-                <svg class="fa-cubes">
-                  <use xlink:href="#fa-cubes"></use>
-                </svg>
-                <strong>Built to expand</strong>
-              </h4>
-              <p>The best way to <strong>inspire with your content</strong> is to connect on a personal level:</p>
-              <ul class="description">
-                <li>Background images: <a href="http://unsplash.com">Unsplash</a>.</li>
-                <li>CSS animations: <a href="https://daneden.github.io/animate.css/">Animate.css</a>.</li>
-                <li>Longforms: <a href="http://michalsnik.github.io/aos/"> Animate on scroll</a>.</li>
-              </ul>
-            </div>
+            <!-- .end .column -->
           </div>
-          <!--end .grid -->
-        </div>
-      </section>
-      <section class="aligncenter">
-        <!-- .wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h2><strong>Ready to Start?</strong> </h2>
-          <p class="text-intro">Create your own presentation instantly. <br>120+ premium slides ready to use.</p>
-          <p>
-            <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
-              <svg class="fa-cloud-download">
-                <use xlink:href="#fa-cloud-download"></use>
-              </svg>
-              Free Download
-            </a>
-            <span class="try">
-              <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
-                <svg class="fa-paypal">
-                  <use xlink:href="#fa-paypal"></use>
-                </svg>
-                Pay what you want.
-              </a>
-            </span>
-          </p>
+          <!-- .end .grid -->
         </div>
         <!-- .end .wrap -->
       </section>
-      <section class="slide-bottom">
+
+      <section>
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
         <div class="wrap">
-          <div class="content-right text-serif">
-            <h2>
-              <strong>Thanks.</strong>
-              <a target="_blank" title="Share on Twitter"
-                href="https://twitter.com/intent/tweet?text=Finally,%20everything%20you%20need%20to%20make%20HTML%20presentations%20in%20a%20fast/beautiful%20way.%20@WebSlides%20=%20Good%20karma%20&mdash;%20https://webslides.tv">
-                <svg class="fa-twitter">
-                  <use xlink:href="#fa-twitter"></use>
-                </svg>
-              </a>
-            </h2>
-            <p>People share content that makes them feel inspired. WebSlides is a very effective way to engage young
-              audiences, customers, and teams.</p>
-            <p>Best,<br> <a href="https://twitter.com/jlantunez">@jlantunez</a>, <a
-                href="https://twitter.com/belelros">@belelros</a>, and <a
-                href="https://twitter.com/luissacristan">@luissacristan</a>.</p>
+          <h4><strong style="color: #DC2F1F">China</strong> is the leader among the newly added countries.
+            <strong style="color: #DC2F1F">China</strong> won its
+            first gold medal in 1984, and in 2008, it has surpassed <strong style="color: #005F9E">USA</strong>, which
+            has won the first place
+            for many consecutive times.
+          </h4>
+          <div id="s5_chart"></div>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h4>There is a positive relationship between the number of gold medals and GDP, which has happened in both
+            <strong style="color: #DC2F1F">China</strong> and <strong style="color: #005F9E">South Korea</strong>.
+          </h4>
+          <div id="s6_chart"></div>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h4>Most of the countries where the number of medals increased in 2008 were developing countries in
+            <strong style="color: #DC2F1F">Asia</strong> and <strong style="color: #DC2F1F">Africa</strong>.
+            <br>
+            In the future, with the economic development of these countries, the distribution of medals may be more
+            balanced.
+          </h4>
+          <div id="s7_chart"></div>
+          <p style="text-align: center;">The countries filled in <strong style="color: red;">red</strong> are the ones
+            with increasing number of
+            medals in 2008, the countries
+            filled in <strong style="color: green;">green</strong>
+            are the ones decreasing, and the others are unchanged.</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column" style="margin-left: 10vh;">
+              <img src="static/poster.png" />
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <p>
+                <a class="button ghost" href="static/poster.pdf" title="Download Poster">
+                  Download Poster
+                </a>
+              </p>
+            </div>
+            <!-- .end .column -->
           </div>
-          <!-- .end .content-right -->
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="aligncenter">
+        <span class="background" style="background-color:black"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h1><strong style="font-size: 100px;">Thanks :)</strong></h1>
         </div>
         <!-- .end .wrap -->
       </section>
@@ -365,21 +226,636 @@
   </main>
   <!-- end main -->
 
-  <!-- A global footer
-
-     <footer role="contentinfo">
-      <div class="wrap">
-        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
-      </div>
-    </footer>  -->
-
   <!-- Required -->
   <script src="static/js/webslides.js"></script>
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script>
     window.ws = new WebSlides();
+    const counterUp = window.counterUp.default
+    const els = document.querySelectorAll('.counter')
+
+    var margin = { top: 40, right: 30, bottom: 30, left: 50 },
+      width4 = document.body.clientWidth / 1.8 - margin.left - margin.right,
+      height4 = document.body.clientHeight / 1.5 - margin.top - margin.bottom;
+    var greyColor = "#898989";
+    var barColor = "#005F9E";
+    var highlightColor = "#EFA90D";
+
+    var formatPercent = d3.format("d");
+
+    var svg4 = d3.select("#s4_chart").append("svg")
+      .attr("width", width4 + margin.left + margin.right)
+      .attr("height", height4 + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x4 = d3.scaleBand()
+      .range([0, width4])
+      .padding(0.4);
+    var y4 = d3.scaleLinear()
+      .range([height4, 0]);
+
+    var xAxis4 = d3.axisBottom(x4).tickSize([]).tickPadding(10);
+    var yAxis4 = d3.axisLeft(y4).tickFormat(formatPercent);
+
+    var dataset4 = [
+      { 'year': '1896', 'value': 11 },
+      { 'year': '1900', 'value': 21 },
+      { 'year': '1904', 'value': 10 },
+      { 'year': '1908', 'value': 19 },
+      { 'year': '1912', 'value': 18 },
+      { 'year': '1920', 'value': 22 },
+      { 'year': '1924', 'value': 27 },
+      { 'year': '1928', 'value': 33 },
+      { 'year': '1932', 'value': 27 },
+      { 'year': '1936', 'value': 32 },
+      { 'year': '1948', 'value': 37 },
+      { 'year': '1952', 'value': 43 },
+      { 'year': '1956', 'value': 38 },
+      { 'year': '1960', 'value': 44 },
+      { 'year': '1964', 'value': 41 },
+      { 'year': '1968', 'value': 44 },
+      { 'year': '1972', 'value': 48 },
+      { 'year': '1976', 'value': 41 },
+      { 'year': '1980', 'value': 36 },
+      { 'year': '1984', 'value': 47 },
+      { 'year': '1988', 'value': 52 },
+      { 'year': '1992', 'value': 64 },
+      { 'year': '1996', 'value': 79 },
+      { 'year': '2000', 'value': 80 },
+      { 'year': '2004', 'value': 74 },
+      { 'year': '2008', 'value': 87 }]
+
+    x4.domain(dataset4.map(d => { return d.year; }));
+    y4.domain([0, d3.max(dataset4, d => { return d.value; })]);
+
+    svg4.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height4 + ")")
+      .call(xAxis4);
+    svg4.append("g")
+      .attr("class", "y axis")
+      .call(yAxis4);
+
+    svg4.selectAll(".bar")
+      .data(dataset4)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .style("display", d => { return d.value === null ? "none" : null; })
+      .style("fill", d => {
+        return d.value === d3.max(dataset4, d => { return d.value; })
+          ? highlightColor : barColor
+      })
+      .attr("x", d => { return x4(d.year); })
+      .attr("width", x4.bandwidth())
+      .attr("y", d => { return height4; })
+      .attr("height", 0)
+
+    svg4.selectAll(".label")
+      .data(dataset4)
+      .enter()
+      .append("text")
+      .attr("class", "label")
+      .style("display", d => { return d.value === null ? "none" : null; })
+      .attr("x", (d => { return x4(d.year) + (x4.bandwidth() / 2) - 8; }))
+      .style("fill", d => {
+        return d.value === d3.max(dataset4, d => { return d.value; })
+          ? highlightColor : greyColor
+      })
+      .attr("y", d => { return height4; })
+      .attr("height", 0)
+
+    var width3 = document.body.clientWidth / 1.8 - margin.left - margin.right,
+      height3 = document.body.clientHeight / 3 - margin.top - margin.bottom;
+
+    var svg3 = d3.select("#s3_chart").append("svg")
+      .attr("width", width3 + margin.left + margin.right)
+      .attr("height", height3 * 2 + 20 + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x3 = d3.scaleTime()
+      .range([0, width4])
+    var y31 = d3.scaleLinear()
+      .range([height3, 0])
+    var y32 = d3.scaleLinear()
+      .range([height3 * 2 + 10, height3 + 10])
+
+    var xAxis3 = d3.axisBottom(x3).tickFormat(d3.timeFormat("%Y")).tickPadding(10);
+    var yAxis31 = d3.axisLeft(y31).tickFormat(formatPercent).tickPadding(10);
+    var yAxis32 = d3.axisLeft(y32).tickFormat(formatPercent).tickPadding(10);
+
+    var dataset3 = [
+      { 'year': 1896, 'value': 43, 'avg': 3.909090909090909 },
+      { 'year': 1900, 'value': 90, 'avg': 4.285714285714286 },
+      { 'year': 1904, 'value': 96, 'avg': 9.6 },
+      { 'year': 1908, 'value': 110, 'avg': 5.7894736842105265 },
+      { 'year': 1912, 'value': 103, 'avg': 5.722222222222222 },
+      { 'year': 1920, 'value': 156, 'avg': 7.090909090909091 },
+      { 'year': 1924, 'value': 126, 'avg': 4.666666666666667 },
+      { 'year': 1928, 'value': 110, 'avg': 3.3333333333333335 },
+      { 'year': 1932, 'value': 116, 'avg': 4.296296296296297 },
+      { 'year': 1936, 'value': 130, 'avg': 4.0625 },
+      { 'year': 1948, 'value': 138, 'avg': 3.72972972972973 },
+      { 'year': 1952, 'value': 149, 'avg': 3.4651162790697674 },
+      { 'year': 1956, 'value': 153, 'avg': 4.026315789473684 },
+      { 'year': 1960, 'value': 152, 'avg': 3.4545454545454546 },
+      { 'year': 1964, 'value': 163, 'avg': 3.975609756097561 },
+      { 'year': 1968, 'value': 174, 'avg': 3.9545454545454546 },
+      { 'year': 1972, 'value': 195, 'avg': 4.0625 },
+      { 'year': 1976, 'value': 198, 'avg': 4.829268292682927 },
+      { 'year': 1980, 'value': 204, 'avg': 5.666666666666667 },
+      { 'year': 1984, 'value': 226, 'avg': 4.808510638297872 },
+      { 'year': 1988, 'value': 241, 'avg': 4.634615384615385 },
+      { 'year': 1992, 'value': 260, 'avg': 4.0625 },
+      { 'year': 1996, 'value': 271, 'avg': 3.430379746835443 },
+      { 'year': 2000, 'value': 297, 'avg': 3.7125 },
+      { 'year': 2004, 'value': 301, 'avg': 4.0675675675675675 },
+      { 'year': 2008, 'value': 302, 'avg': 3.471264367816092 }]
+
+    x3.domain(d3.extent(dataset3, function (d) { return d3.timeParse("%Y")(d.year); }));
+    y31.domain([0, d3.max(dataset3, d => { return d.value; })]);
+    y32.domain([0, d3.max(dataset3, d => { return d.avg; })]);
+
+
+    svg3.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + (height3 * 2 + 10) + ")")
+      .call(xAxis3);
+    svg3.append("g")
+      .attr("class", "y axis")
+      .call(yAxis31);
+    svg3.append("g")
+      .attr("class", "y axis")
+      .call(yAxis32);
+
+    let lineGenerator31 = d3.line()
+      .x(d => x3(d3.timeParse("%Y")(d.year)))
+      .y(d => y31(d.value))
+
+    let lineGenerator32 = d3.line()
+      .x(d => x3(d3.timeParse("%Y")(d.year)))
+      .y(d => y32(d.avg))
+
+    svg3.append("path")
+      .datum(dataset3)
+      .attr("d", lineGenerator31)
+      .attr("stroke", highlightColor)
+      .attr("stroke-width", "3px")
+      .attr("class", "line")
+
+    svg3.append("path")
+      .datum(dataset3)
+      .attr("d", lineGenerator32)
+      .attr("stroke", barColor)
+      .attr("stroke-width", "3px")
+      .attr("class", "line")
+
+    var width5 = document.body.clientWidth / 1.2 - margin.left - margin.right,
+      height5 = document.body.clientHeight / 2 - margin.top - margin.bottom;
+
+    var svg5 = d3.select("#s5_chart").append("svg")
+      .attr("width", width5 + margin.left + margin.right)
+      .attr("height", height5 * 1.5 + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x5 = d3.scaleTime()
+      .range([0, width5 - 100])
+    var y5 = d3.scaleLinear()
+      .range([height5, 0])
+
+    var xAxis5 = d3.axisBottom(x5).tickFormat(d3.timeFormat("%Y")).tickPadding(10);
+    var yAxis5 = d3.axisLeft(y5).tickFormat(formatPercent);
+
+    var dataset5 = [
+      { 'year': 1968, 'usa': 45, 'china': 0 },
+      { 'year': 1972, 'usa': 33, 'china': 0 },
+      { 'year': 1976, 'usa': 34, 'china': 0 },
+      { 'year': 1980, 'usa': 0, 'china': 0 },
+      { 'year': 1984, 'usa': 83, 'china': 15 },
+      { 'year': 1988, 'usa': 36, 'china': 5 },
+      { 'year': 1992, 'usa': 37, 'china': 16 },
+      { 'year': 1996, 'usa': 44, 'china': 16 },
+      { 'year': 2000, 'usa': 36, 'china': 28 },
+      { 'year': 2004, 'usa': 36, 'china': 32 },
+      { 'year': 2008, 'usa': 36, 'china': 51 }]
+
+    x5.domain(d3.extent(dataset5, function (d) { return d3.timeParse("%Y")(d.year); }));
+    y5.domain([0, d3.max(dataset5, d => { return d.usa; })]);
+
+
+    svg5.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height5 + ")")
+      .call(xAxis5);
+    svg5.append("g")
+      .attr("class", "y axis")
+      .call(yAxis5);
+
+    let lineGenerator51 = d3.line()
+      .x(d => x5(d3.timeParse("%Y")(d.year)))
+      .y(d => y5(d.usa))
+
+    let lineGenerator52 = d3.line()
+      .x(d => x5(d3.timeParse("%Y")(d.year)))
+      .y(d => y5(d.china))
+
+    svg5.append("path")
+      .datum(dataset5)
+      .attr("d", lineGenerator51)
+      .attr("stroke", barColor)
+      .attr("stroke-width", "3px")
+      .attr("fill", "none")
+      .attr("class", "line")
+
+    svg5.append("path")
+      .datum(dataset5)
+      .attr("d", lineGenerator52)
+      .attr("stroke", "#DC2F1F")
+      .attr("stroke-width", "3px")
+      .attr("fill", "none")
+      .attr("class", "line")
+
+    svg5.append("line")
+      .attr("x1", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)))
+      .attr("y1", y5(dataset5[dataset5.length - 1].china))
+      .attr("x2", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)))
+      .attr("y2", height5)
+      .attr("stroke", "white")
+      .attr("stroke-dasharray", "6, 3");
+
+    svg5.append("circle")
+      .attr("r", 8)
+      .attr("cx", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)))
+      .attr("cy", y5(dataset5[dataset5.length - 1].china))
+      .attr("fill", "#DC2F1F")
+
+    svg5.append("circle")
+      .attr("r", 8)
+      .attr("cx", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)))
+      .attr("cy", y5(dataset5[dataset5.length - 1].usa))
+      .attr("fill", barColor)
+
+    svg5.append("text")
+      .style("font-size", "20")
+      .style("stroke", "#DC2F1F")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)) + 20)
+      .attr("y", y5(dataset5[dataset5.length - 1].china))
+      .text("China: 51")
+
+    svg5.append("text")
+      .style("font-size", "20")
+      .style("stroke", barColor)
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[dataset5.length - 1].year)) + 20)
+      .attr("y", y5(dataset5[dataset5.length - 1].usa))
+      .text("USA: 36")
+
+    svg5.append("circle")
+      .attr("r", 10)
+      .attr("cx", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("cy", y5(0))
+      .attr("fill", "none")
+      .attr("stroke", highlightColor)
+      .attr("stroke-width", "2px")
+
+    svg5.append("line")
+      .attr("x1", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y1", height5 * 1.2)
+      .attr("x2", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y2", height5)
+      .attr("stroke", highlightColor)
+      .attr("stroke-dasharray", "6, 3");
+
+    let context = svg5.append("text")
+    context.append("tspan")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y", height5 * 1.2 + 20)
+      .style("stroke", highlightColor)
+      .style("font-size", "18")
+      .text("What happened in 1980?")
+    context.append("tspan")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y", height5 * 1.2 + 45)
+      .style("stroke", highlightColor)
+      .style("font-size", "18")
+      .text("The Olympics is inevitably affected by politics.")
+    context.append("tspan")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y", height5 * 1.2 + 65)
+      .style("stroke", "white")
+      .style("font-size", "14")
+      .text("Led by")
+    context.append("tspan")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[3].year)) + 45)
+      .attr("y", height5 * 1.2 + 65)
+      .style("stroke", barColor)
+      .style("font-size", "20")
+      .text("USA")
+    context.append("tspan")
+      .attr("x", x5(d3.timeParse("%Y")(dataset5[3].year)))
+      .attr("y", height5 * 1.2 + 85)
+      .style("stroke", "white")
+      .style("font-size", "14")
+      .text("66 countries boycotted the games entirely, because of the Soviet–Afghan War.")
+
+
+    var width6 = document.body.clientWidth / 1.2 - margin.left - margin.right,
+      height6 = document.body.clientHeight / 2 - margin.top - margin.bottom;
+
+    var svg6 = d3.select("#s6_chart").append("svg")
+      .attr("width", width6 + margin.left + margin.right)
+      .attr("height", height6 + 40 + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x61 = d3.scaleLinear()
+      .range([20, width6 / 2 - 30])
+    var y61 = d3.scaleLinear()
+      .range([height6, 0])
+    var x62 = d3.scaleLinear()
+      .range([width6 / 2 + 50, width6])
+    var y62 = d3.scaleLinear()
+      .range([height6, 0])
+
+    var xAxis61 = d3.axisBottom(x61).tickFormat(function (d) { return d + 'B'; }).tickPadding(10);
+    var yAxis61 = d3.axisLeft(y61).tickFormat(formatPercent);
+    var xAxis62 = d3.axisBottom(x62).tickFormat(function (d) { return d + 'B'; }).tickPadding(10);
+    var yAxis62 = d3.axisLeft(y62).tickFormat(formatPercent);
+
+    var dataset61 = [
+      { 'gdp': 1278727499972, 'count': 70 },
+      { 'gdp': 1789173403996, 'count': 49 },
+      { 'gdp': 2206392827709, 'count': 108 },
+      { 'gdp': 3122277587022, 'count': 104 },
+      { 'gdp': 3822736947333, 'count': 131 },
+      { 'gdp': 5918976689186, 'count': 144 },
+      { 'gdp': 8871822144270, 'count': 223 }]
+    var dataset62 = [
+      { 'gdp': 12453900758, 'count': 2 },
+      { 'gdp': 14404394735, 'count': 2 },
+      { 'gdp': 22742570189, 'count': 3 },
+      { 'gdp': 36707315242, 'count': 5 },
+      { 'gdp': 53401919698, 'count': 3 },
+      { 'gdp': 80542593906, 'count': 2 },
+      { 'gdp': 125952724890, 'count': 9 },
+      { 'gdp': 231693378455, 'count': 37 },
+      { 'gdp': 355269385284, 'count': 67 },
+      { 'gdp': 487386010973, 'count': 58 },
+      { 'gdp': 655101259481, 'count': 56 },
+      { 'gdp': 781601867339, 'count': 54 },
+      { 'gdp': 957347843581, 'count': 60 },
+      { 'gdp': 1140973809045, 'count': 67 }]
+
+    x61.domain(d3.extent(dataset61, function (d) { return d.gdp / 1000000000; }));
+    y61.domain([0, d3.max(dataset61, d => { return d.count; })]);
+    x62.domain(d3.extent(dataset62, function (d) { return d.gdp / 1000000000; }));
+    y62.domain([0, d3.max(dataset62, d => { return d.count; })]);
+
+    svg6.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height6 + ")")
+      .call(xAxis61);
+    svg6.append("g")
+      .attr("class", "y axis")
+      .call(yAxis61);
+    svg6.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height6 + ")")
+      .call(xAxis62);
+    svg6.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + (width6 / 2 + 50) + ",0)")
+      .call(yAxis62);
+
+    svg6.append("line")
+      .attr("x1", x61(1378))
+      .attr("y1", y61(68.76))
+      .attr("x2", x61(8801))
+      .attr("y2", y61(217.42))
+      .attr("stroke", "white")
+      .attr("stroke-width", "3px")
+      .attr("stroke-dasharray", "12, 3");
+
+    svg6.append("line")
+      .attr("x1", x62(130))
+      .attr("y1", y62(8.53))
+      .attr("x2", x62(1000))
+      .attr("y2", y62(71.76))
+      .attr("stroke", "white")
+      .attr("stroke-width", "3px")
+      .attr("stroke-dasharray", "12, 3");
+
+    svg6.append('g')
+      .selectAll("dot")
+      .data(dataset61)
+      .enter()
+      .append("circle")
+      .attr("cx", function (d) { return x61(d.gdp / 1000000000); })
+      .attr("cy", function (d) { return y61(d.count); })
+      .attr("r", 6)
+      .style("fill", "#DC2F1F")
+    svg6.append('g')
+      .selectAll("dot")
+      .data(dataset62)
+      .enter()
+      .append("circle")
+      .attr("cx", function (d) { return x62(d.gdp / 1000000000); })
+      .attr("cy", function (d) { return y62(d.count); })
+      .attr("r", 6)
+      .style("fill", barColor)
+
+    svg6.append("text")
+      .style("font-size", "20")
+      .style("stroke", "white")
+      .attr("x", -height6 / 2)
+      .attr("y", -35)
+      .attr("transform", "rotate(-90)")
+      .text("Number of Gold")
+    svg6.append("text")
+      .style("font-size", "20")
+      .style("stroke", "white")
+      .attr("x", width6 / 2)
+      .attr("y", height6 + 50)
+      .text("GDP")
+
+    var width7 = document.body.clientWidth / 1.2 - margin.left - margin.right,
+      height7 = document.body.clientHeight / 1.5 - margin.top - margin.bottom;
+
+    var svg7 = d3.select("#s7_chart").append("svg")
+      .attr("width", width6 + margin.left + margin.right)
+      .attr("height", height6 + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var dataset7 = {
+      'Jamaica': 16,
+      'Bahamas': -1,
+      'Iceland': 2,
+      'Slovenia': 4,
+      'Norway': 5,
+      'Australia': -10,
+      'Mongolia': 9,
+      'New Zealand': 3,
+      'Estonia': 1,
+      'Cuba': -13,
+      'Belarus': 7,
+      'Trinidad and Tobago': 3,
+      'Bahrain': 3,
+      'Georgia': 2,
+      'Latvia': -2,
+      'Slovakia': 2,
+      'Denmark': 1,
+      'Netherlands': -4,
+      'Hungary': -18,
+      'Lithuania': 0,
+      'Armenia': 6,
+      'Britain': 41,
+      'Croatia': -2,
+      'Czech Republic': 2,
+      'South Korea': 7,
+      'Kazakhstan': 7,
+      'Switzerland': 2,
+      'Finland': 3,
+      'Azerbaijan': 4,
+      'France': 6,
+      'Bulgaria': -9,
+      'Germany': -8,
+      'Ukraine': 0,
+      'Canada': 9,
+      'Sweden': -8,
+      'Russia': -34,
+      'Ireland': 4,
+      'Italy': -9,
+      'Panama': 3,
+      'Spain': 2,
+      'Romania': -23,
+      'Mauritius': 1,
+      'Kenya': 16,
+      'Zimbabwe': 3,
+      'United States': 7,
+      'Kyrgyzstan': 3,
+      'Poland': 4,
+      'Greece': -28,
+      'Dominican Republic': 2,
+      'Austria': -11,
+      'Belgium': 0,
+      'Portugal': 0,
+      'North Korea': 2,
+      'Tajikistan': 3,
+      'Singapore': 2,
+      'Serbia': 4,
+      'Japan': -29,
+      'Uzbekistan': 0,
+      'Tunisia': 3,
+      'Moldova': 1,
+      'Argentina': 0,
+      'Ethiopia': 2,
+      'Turkey': -5,
+      'Taiwan': -7,
+      'Togo': 1,
+      'China': 79,
+      'Cameroon': 0,
+      'Thailand': -5,
+      'Ecuador': 2,
+      'Israel': -3,
+      'Brazil': 3,
+      'Chile': -5,
+      'Morocco': -5,
+      'Algeria': 3,
+      'Malaysia': 2,
+      'Colombia': 1,
+      'Mexico': 0,
+      'Iran': -8,
+      'Sudan': 2,
+      'South Africa': -9,
+      'Venezuela': -1,
+      'Indonesia': 1,
+      'Afghanistan': 1,
+      'Nigeria': 3,
+      'Vietnam': 2,
+      'Egypt': -7,
+      'India': 3
+    }
+
+    var path = d3.geoPath();
+    var projection = d3.geoMercator()
+      .scale(80)
+      .center([0, 20])
+      .translate([width7 / 2, height7 / 2]);
+    const colorScale = d3.scaleLinear()
+      .domain([-1, 0, 1])
+      .range(["green", "black", "red"]);
+    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+      .then(data => {
+        svg7.append("g")
+          .selectAll("path")
+          .data(data.features)
+          .enter()
+          .append("path")
+          // draw each country
+          .attr("d", d3.geoPath()
+            .projection(projection)
+          )
+          .attr("stroke", "white")
+          // set the color of each country
+          .attr("fill", function (d) {
+            let tmp = dataset7[d.properties.name] || 0
+            return colorScale(tmp)
+          });
+      });
+
+    document.getElementById("webslides").addEventListener("ws:slide-change", function (e) {
+      if (e.detail.currentSlide == 2) {
+        for (let el of els) {
+          counterUp(el, {
+            duration: 1000,
+            delay: 10,
+          })
+        }
+      }
+      else if (e.detail.currentSlide == 3) {
+        svg3.selectAll(".line")
+          .transition()
+          .duration(2000)
+          .attrTween("stroke-dasharray", function () {
+            const l = this.getTotalLength(),
+              i = d3.interpolateString("0," + l, l + "," + l);
+            return function (t) { return i(t) };
+          })
+      }
+      else if (e.detail.currentSlide == 4) {
+        svg4.selectAll(".bar")
+          .transition()
+          .duration(750)
+          .delay(function (d, i) {
+            return i * 150;
+          })
+          .attr("y", d => { return y4(d.value); })
+          .attr("height", d => { return height4 - y4(d.value); });
+        svg4.selectAll(".label")
+          .transition()
+          .duration(750)
+          .delay((d, i) => { return i * 150; })
+          .text(d => { return formatPercent(d.value); })
+          .attr("y", d => { return y4(d.value) + .1; })
+          .attr("dy", "-.7em");
+      }
+      else if (e.detail.currentSlide == 5) {
+        svg5.selectAll(".line")
+          .transition()
+          .duration(2000)
+          .attrTween("stroke-dasharray", function () {
+            const l = this.getTotalLength(),
+              i = d3.interpolateString("0," + l, l + "," + l);
+            return function (t) { return i(t) };
+          })
+      }
+    })
+
   </script>
 
-  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
   <script defer src="static/js/svg-icons.js"></script>
 
 </body>
